@@ -1328,6 +1328,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#detection-screenshot" class="md-nav__link">
     Detection Screenshot
   </a>
@@ -2196,6 +2203,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#detection-screenshot" class="md-nav__link">
     Detection Screenshot
   </a>
@@ -2276,6 +2290,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="queries"><strong> Queries</strong><a class="headerlink" href="#queries" title="Permanent link">#</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Log Analytics</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code>AzureActivity 
+|where OperationNameValue==&quot;microsoft.compute/virtualMachines/extensions/write&quot; or OperationNameValue==&quot;Microsoft.Resources/deployments/validate/action&quot;
+</code></pre></div>
 <h2 id="detection-screenshot"><strong>Detection Screenshot</strong><a class="headerlink" href="#detection-screenshot" title="Permanent link">#</a></h2>
 <p><img alt="validate" src="../validate.png" /></p>
 </div>

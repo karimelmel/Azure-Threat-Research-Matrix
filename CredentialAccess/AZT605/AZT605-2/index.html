@@ -1862,6 +1862,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2174,6 +2181,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#queries" class="md-nav__link">
+    Queries
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2261,6 +2275,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="queries"><strong> Queries</strong><a class="headerlink" href="#queries" title="Permanent link">#</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Log Analytics</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code> |where OperationNameValue==&quot;Microsoft.Automation/automationAccounts/jobs/write&quot; or OperationNameValue==&quot;Microsoft.Automation/automationAccounts/runbooks/publish/action&quot;
+ or OperationNameValue==&quot;Microsoft.Automation/automationAccounts/runbooks/draft/write&quot; or OperationNameValue==&quot;Microsoft.Automation/automationAccounts/runbooks/write&quot;
+</code></pre></div>
 </div>
 <div class="admonition faq">
 <p class="admonition-title">Additional Resources</p>
